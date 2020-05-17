@@ -30,13 +30,14 @@ int main()
     if(bCreateaprocess == FALSE)
     {
         cout << "CreatProcess - failed: " << GetLastError() << endl;
-    }else
+    }
+    else
     {
         cout << "CreatProcess - sucess..." << endl;
         cout << "process ID: " << pi.dwProcessId << endl;
         cout << "thread ID: " << pi.dwThreadId << endl;
         //cout << "GetProcessId -> " << GetProcessId(pi.hProcess) << endl;
-       // cout << "GetThreadId -> " << GetThreadId(pi.hThread) << endl;
+        //cout << "GetThreadId -> " << GetThreadId(pi.hThread) << endl;
     }
 
     WaitForSingleObject(pi.hProcess, INFINITE);
