@@ -19,7 +19,7 @@ int main()
     ZeroMemory(&pi, sizeof(pi));
 
     //step - 2: CreateProcess.
-    bProcess = CreateProcess(TEXT("C:\\Users\\GILG\\Documents\\_windows system programing\\CreateProcess.exe"), //name of application.
+    bProcess = CreateProcess(TEXT("C:\\caminho\\CreateProcess.exe"), //name of application.
                              NULL,
                              NULL,
                              NULL,
